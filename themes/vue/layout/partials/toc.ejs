@@ -1,0 +1,37 @@
+<ul class="menu-root">
+  <% ['api', 'style-guide'].indexOf(type) === -1 && site.pages.find({type: type}).sort('order').each(function (p) { %>
+    <% var fileName = p.path.replace(/^.+?\/([\w-]+)\.html/, '$1') %>
+    <% if (type === 'guide') { %>
+      <% if (fileName === 'installation') { %>
+        <li><h3>基础概要</h3></li>
+      <% } %>
+      <% if (fileName === 'components-registration') { %>
+        <li><h3>深入组件</h3></li>
+      <% } %>
+      <% if (fileName === 'transitions') { %>
+        <li><h3>过渡 & 动画</h3></li>
+      <% } %>
+      <% if (fileName === 'mixins') { %>
+        <li><h3>可重用 & 合成</h3></li>
+      <% } %>
+      <% if (fileName === 'deployment') { %>
+        <li><h3>工具</h3></li>
+      <% } %>
+      <% if (fileName === 'routing') { %>
+        <li><h3>扩展升级</h3></li>
+      <% } %>
+      <% if (fileName === 'reactivity') { %>
+        <li><h3>内部原理</h3></li>
+      <% } %>
+      <% if (fileName === 'migration') { %>
+        <li><h3>升级迁移</h3></li>
+      <% } %>
+      <% if (fileName === 'comparison') { %>
+        <li><h3>其他更多</h3></li>
+      <% } %>
+    <% } %>
+    <li>
+      <a href="<%- url_for(p.path) %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+    </li>
+  <% }) %>
+</ul>
