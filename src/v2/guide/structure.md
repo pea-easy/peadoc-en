@@ -1,5 +1,5 @@
 ---
-title: 安装
+title: 目录结构
 type: guide
 order: 3
 vue_version: 2.5.13
@@ -7,7 +7,38 @@ gz_size: "30.67"
 ---
 
 
-### 兼容性
+### 目录结构
+初始化项目目录结构
+```
+pea-project
+├── package.json
+├── server.js 
+├── index.js 
+├── app
+│   ├── controller
+│   |   └── user-ctrl.js
+│   ├── service 
+│   |   └── user-server.js
+│   |   └── validate
+|   |       └── validate-user.js 
+│   ├── dao 
+│   |   └── user-dao.js
+│   ├── routes
+│   |   └── index.js
+│   │   └── user.js
+│   │   └── apiguide
+|   |       └── user.js 
+├── config
+|   ├── plugin.js
+|   ├── development.js
+└── test
+    ├── middleware
+    |   └── response_time.test.js
+    └── controller
+        └── home.test.js
+```
+
+
 
 Vue.js **不支持** IE8 及其以下版本，因为 Vue.js 使用的 ECMAScript 5 特性在 IE8 无法模拟。Vue.js 支持所有[兼容 ECMAScript 5 的浏览器](https://caniuse.com/#feat=es5)。
 
@@ -250,6 +281,6 @@ $ bower install vue
 
 ***
 
-> 原文：https://vuejs.org/v2/guide/installation.html
+> 原文：https://vuejs.org/v2/guide/structure.html
 
 ***

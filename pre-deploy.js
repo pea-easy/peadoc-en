@@ -6,9 +6,9 @@ const request = require('request')
 const execSync = require('child_process').execSync
 
 const themeconfPath = 'themes/vue/_config.yml'
-const installPath = 'src/v2/guide/installation.md'
+const installPath = 'src/v2/guide/structure.md'
 const themeconfig = fs.readFileSync(themeconfPath, 'utf-8')
-const installation = fs.readFileSync(installPath, 'utf-8')
+const structure = fs.readFileSync(installPath, 'utf-8')
 
 // get latest Vue version
 console.log(`Checking latest Vue version...`)
@@ -33,10 +33,10 @@ Promise.all([
   download(`vue.js`),
   download(`vue.min.js`)
 ]).then(([ devSize, prodSize ]) => {
-  // replace installation page version and size
+  // replace structure page version and size
   fs.writeFileSync(
     installPath,
-    installation
+    structure
       .replace(/vue_version: .*/, 'vue_version: ' + version)
       .replace(/gz_size:.*/g, `gz_size: "${prodSize}"`)
       .replace(/\/vue@[\d\.]+\//g, `/vue@${version}/`)

@@ -12,7 +12,7 @@ This recipe shows how to use the [Debugger for Chrome](https://github.com/Micros
 
 You must have Chrome and VS Code installed. Make sure to get the latest version of [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) extension installed in VS Code.
 
-Install and create a project with the [vue-cli](https://github.com/vuejs/vue-cli), with the instructions for installation documented in the readme of the project. Change into the newly created application directory and open VS Code.
+Install and create a project with the [vue-cli](https://github.com/vuejs/vue-cli), with the instructions for structure documented in the readme of the project. Change into the newly created application directory and open VS Code.
 
 ### Showing Source Code in the Chrome Devtools
 

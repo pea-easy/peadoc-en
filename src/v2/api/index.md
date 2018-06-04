@@ -679,7 +679,7 @@ type: api
 
 - **参考：**
   - [生命周期示意图](../guide/instance.html#生命周期示意图)
-  - [独立构建-vs-运行时构建](../guide/installation.html#独立构建-vs-运行时构建)
+  - [独立构建-vs-运行时构建](../guide/structure.html#独立构建-vs-运行时构建)
 
 ### template
 

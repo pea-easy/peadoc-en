@@ -2,8 +2,8 @@
   <% ['api', 'style-guide'].indexOf(type) === -1 && site.pages.find({type: type}).sort('order').each(function (p) { %>
     <% var fileName = p.path.replace(/^.+?\/([\w-]+)\.html/, '$1') %>
     <% if (type === 'guide') { %>
-      <% if (fileName === 'installation') { %>
-        <li><h3>基础概要</h3></li>
+      <% if (fileName === 'structure') { %>
+        <li><h3>基础功能</h3></li>
       <% } %>
       <% if (fileName === 'components-registration') { %>
         <li><h3>深入组件</h3></li>
