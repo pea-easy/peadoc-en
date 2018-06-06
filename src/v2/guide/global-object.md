@@ -8,7 +8,8 @@ order: 4
 * 这个对象是插件pea-logger暴露出来的方法，pea-logger插件是对 [log4js-node](https://github.com/log4js-node/log4js-node)的二次封装，log4js-node里面的方法皆可以在程序中使用。
 * 开箱即用,项目初始化完成之后直接可以使用
 * 项目初始化完成之后会在系统的当前用户目录下**(cd ~)**生成一个logs 文件夹，所有日志存储在这个位置
-* 日志格式
+* 日志格式 {project_name}_yyyy-mm-dd.log {project_name}_err_yyyy-mm-dd.log
+
 ### 目的
 1. 能够以插件化的形式注入到系统中，随时可开关
 2. 自动按日期分割日志文件，每天生成两个文件,一个正确,一个错误.
@@ -43,26 +44,29 @@ logger: {
 ```
 
 
-### 
-
-
-
-
 ## APP
 
-数据绑定最基本的形式，就是使用 "mustache" 语法（双花括号）的文本插值(text interpolation)：
-
-``` html
-<span>Message: {{ msg }}</span>
+### 目的
+* 存储插件的对象,比如我们使用了插件 [pea-redis](https://github.com/TimLiu1/pea-redis) 插件
+ 在插件文件夹下面配置,则可以使用APP.redis这个对象操作方法
 ```
+//config/plugin.js
+   redis:{
+        enable:true,
+        package:'quick-redis'
+    }
+ //config/development.js
+      redis: {
+      host: '127.0.0.1',
+      port: '6379',
+      password: null,
+      db: 0
+          }
 
-mustache 标签将会被替换为 data 对象上对应的 `msg` 属性的值。只要绑定的数据对象上的 `msg` 属性发生改变，插值内容也会随之更新。
-
-也可以通过使用 [v-once 指令](../api/#v-once)，执行一次性插值，也就是说，在数据改变时，插值内容不会随之更新。但是请牢记，这也将影响到同一节点上的其他所有绑定：
-
-``` html
-<span v-once>这里的值永远不会改变：{{ msg }}</span>
 ```
+* 存储插件的对象,比如
+
+
 
 ### 原始 HTML(Raw HTML)
 
