@@ -1,5 +1,5 @@
 ---
-title: computed 属性和 watcher
+title: 配置
 type: guide
 order: 5
 ---
