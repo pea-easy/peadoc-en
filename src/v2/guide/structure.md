@@ -31,11 +31,28 @@ pea-project
 ├── config
 |   ├── plugin.js
 |   ├── development.js
-└── test
+└── lib
     ├── middleware
-    |   └── response_time.test.js
-    └── controller
-        └── home.test.js
+    |   └── responseJSON.js
+    ├── spec.js 
+    public
+    | 
+    .eslintrc.json
+    |
+    .gitignore
+    |
+    apidoc.js
+    |
+    eslintignore
+    |
+    index.js
+    |
+    package.json
+    |
+    README.md
+    |
+    server.js
+
 ```
 
 
