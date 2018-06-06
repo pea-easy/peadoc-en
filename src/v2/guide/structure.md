@@ -6,14 +6,12 @@ vue_version: 2.5.13
 gz_size: "30.67"
 ---
 
-
 ### 目录结构
+
 初始化项目目录结构
+<div style="color:green">
 ```
 pea-project
-├── package.json
-├── server.js 
-├── index.js 
 ├── app
 │   ├── controller
 │   |   └── user-ctrl.js
@@ -35,6 +33,8 @@ pea-project
     ├── middleware
     |   └── responseJSON.js
     ├── spec.js 
+    .core
+    |
     public
     | 
     .eslintrc.json
@@ -54,8 +54,28 @@ pea-project
     server.js
 
 ```
+</div>
 
 
+如上，由框架约定的目录：
+
+app/router.js 用于配置 URL 路由规则
+app/controller/** 用于组装service层提供的服务
+app/service/** 用于编写业务逻辑层，可选，建议使用。
+app/dao/** 用于编写和业务交互层，可选，建议使用。
+config/{env}.js 用于编写配置文件，具体参见配置。
+config/plugin.js 用于配置需要加载的插件，具体参见插件。
+lib/middleware/** 用于放置中间件
+lib/spec.js 初始化操作
+public 存储静态文件
+.core/**/* peajs核心程序，可适当根据业务需求扩展
+
+.eslintrc.json 
+app.js 和 agent.js 用于自定义启动时的初始化工作，可选，具体参见启动自定义。关于agent.js的作用参见Agent机制。
+由内置插件约定的目录：
+
+app/public/** 用于放置静态资源，可选，具体参见内置插件 egg-static。
+app/schedule/** 用于定时任务，可选，具体参见定时任务。
 
 Vue.js **不支持** IE8 及其以下版本，因为 Vue.js 使用的 ECMAScript 5 特性在 IE8 无法模拟。Vue.js 支持所有[兼容 ECMAScript 5 的浏览器](https://caniuse.com/#feat=es5)。
 
