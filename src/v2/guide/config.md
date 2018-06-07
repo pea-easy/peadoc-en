@@ -16,7 +16,7 @@ config/config.js
 config/development.js
 
 ```
-系统会首先加载config.js里面的配置文件，然后根据环境变量NODE_ENV加载配置文件,采取同名一级键覆盖的原则,如果没有配置文件，默认加载development.js文件。
+系统会首先加载config.js里面的配置文件，然后根据环境变量NODE_ENV加载配置文件,采取同名一级键覆盖的原则,如果没有指定环境，默认加载development.js文件。
 
 
 ## 建立生产环境
