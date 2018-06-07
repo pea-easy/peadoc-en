@@ -9,8 +9,7 @@ gz_size: "30.67"
 ### 目录结构
 
 初始化项目目录结构
-<div style="color:green">
-```
+```html
 pea-project
 ├── app
 │   ├── controller
@@ -52,9 +51,7 @@ pea-project
     README.md
     |
     server.js
-
 ```
-</div>
 
 
 如上，由框架约定的目录：
