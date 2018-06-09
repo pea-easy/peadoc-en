@@ -136,7 +136,7 @@ order: 803
     </p>
 
     <p>
-      Vue 及其生态系统，是在一个国际化的团队的引导下发展壮大的，这里列出部分团队成员的信息。
+      Peajs 及其生态系统，是在一个国际化的团队的引导下发展壮大的，这里列出部分团队成员的信息。
     </p>
 
     <p v-if="userPosition" class="success">
@@ -176,7 +176,7 @@ order: 803
     </p>
 
     <p>
-      一些 Vue 社区成员使得 Vue 生态变得十分丰富，有必要在此特别提及。我们与这些主要合作伙伴建立了更加亲密的关系，经常与他们就即将到来的功能和新闻进行协作。
+      一些 Pea 社区成员使得 Pea 生态变得十分丰富，有必要在此特别提及。我们与这些主要合作伙伴建立了更加亲密的关系，经常与他们就即将到来的功能和新闻进行协作。
     </p>
 
     <p v-if="userPosition" class="success">
@@ -268,7 +268,7 @@ order: 803
       name: 'Viki Meng',
       title: 'Good Word Putter-Togetherer',
       city: 'Shanghai, China',
-      languages: ['en', 'zh'],
+      languages: ['zh', 'en'],
       github: 'vmeng',
       work: {
         role: 'Full Stack Developer'
@@ -281,27 +281,11 @@ order: 803
       ]
     },
     {
-      name: 'Darrick Xue',
-      title: 'Extrapolator',
-      city: 'Shanghai, China',
-      languages: ['en', 'zh'],
-      work: {
-        role: 'Educator & Consultant'
-      },
-      links: ['https://www.linkedin.com/in/darrick-xue-68bab4a8'],
-      reposOfficial: [
-        'Localization'
-      ],
-      reposPersonal: [
-        'peajs', 'Product Management', 'Business Analyst'
-      ]
-    },
-    {
-      name: 'Jiahua Chen',
+      name: 'Bruce Chen',
       title: 'Real-Time Rerouter',
       city: 'Shanghai, China',
       languages: ['zh', 'en'],
-      twitter: 'posva',
+      github: 'riskgod',
       work: {
         role: 'Full Stack Developer',
       },
@@ -309,7 +293,24 @@ order: 803
         'peajs', 'ruby', 'python', 'react', 'nodejs', 'scala'
       ],
       links: [
-        'https://www.codementor.io/posva'
+        'https://github.com/riskgod'
+      ]
+    },
+    {
+      name: 'Darrick Xue',
+      title: 'Extrapolator',
+      city: 'Shanghai, China',
+      languages: ['zh', 'en'],
+      work: {
+        role: 'Educator & Consultant'
+      },
+      github: 'DarrickXue',
+      links: ['https://www.linkedin.com/in/darrick-xue-68bab4a8'],
+      reposOfficial: [
+        'Localization'
+      ],
+      reposPersonal: [
+        'peajs', 'Product Management', 'Business Analyst'
       ]
     },
     {
