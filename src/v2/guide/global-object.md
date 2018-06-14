@@ -27,13 +27,21 @@ logger.fatal('Cheese was breeding ground for listeria.');
 
 ```
 
-level和名称在配置文件里面，可修改 **config/{env}.js**
+level和名称在配置文件里面，可修改 **config/{env}.js** 
 ```
   logger: {
         name: 'bt',
         level: 'info'
     }
 ```
+如果希望自己定义日志路径,可以增加outputPath字段
+  ```
+   logger: {
+        name: 'bt',
+        level: 'info',
+        outputPath:'./logs'
+    }
+  ```
 是否启用在插件里面修改 **app/plugin.js**
 
 ```
