@@ -29,10 +29,11 @@ pea-project
 |   ├── plugin.js
 |   ├── development.js
 └── lib
-    ├── middleware
-    |   └── responseJSON.js
-    ├── spec.js 
-    .core
+|   ├── middleware
+|   |   └── responseJSON.js
+└── test
+    | 
+   .core
     |
     public
     | 
@@ -65,6 +66,7 @@ pea-project
 * **lib/middleware/**** 用于放置中间件
 * **lib/spec.js** 初始化操作
 * **public** 存储静态文件
+* **test** 存储测试文档
 * **.core/\*\*/*** peajs核心程序，可适当根据业务需求扩展
 
 
