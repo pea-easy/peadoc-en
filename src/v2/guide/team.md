@@ -151,45 +151,7 @@ order: 803
     ></vuer-profile>
   </div>
 
-  <div class="team">
-    <h2 id="community-partners">
-      社区伙伴
-      <button
-        v-if="geolocationSupported && !userPosition"
-        @click="getUserPosition"
-        :disabled="isSorting"
-        class="sort-by-distance-button"
-      >
-        <i
-          v-if="isSorting"
-          class="fa fa-refresh rotating-clockwise"
-        ></i>
-        <template v-else>
-          <i class="fa fa-map-marker"></i>
-          <span>谁在我附近</span>
-        </template>
-      </button>
-    </h2>
-
-    <p v-if="errorGettingLocation" class="tip">
-      无法获取你的位置。
-    </p>
-
-    <p>
-      一些 Pea 社区成员使得 Pea 生态变得十分丰富，有必要在此特别提及。我们与这些主要合作伙伴建立了更加亲密的关系，经常与他们就即将到来的功能和新闻进行协作。
-    </p>
-
-    <p v-if="userPosition" class="success">
-      社区伙伴将按照他们与你的距离排序。
-    </p>
-
-    <vuer-profile
-      v-for="profile in sortedPartners"
-      :key="profile.github"
-      :profile="profile"
-      :title-visible="titleVisible"
-    ></vuer-profile>
-  </div>
+ 
 </div>
 
 <script>
@@ -587,8 +549,4 @@ order: 803
 </script>
 {% endraw %}
 
-***
 
-> 原文：https://vuejs.org/v2/guide/team.html
-
-***
