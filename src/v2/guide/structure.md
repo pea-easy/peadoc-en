@@ -1,14 +1,14 @@
 ---
-title: 目录结构
+title: Directory Structure
 type: guide
 order: 3
 vue_version: 2.5.13
 gz_size: "30.67"
 ---
 
-### 目录结构
+### Directory Structure
 
-初始化项目目录结构
+Initialize the project directory structure
 ```html
 pea-project
 ├── app
@@ -55,20 +55,20 @@ pea-project
 ```
 
 
-如上，由框架约定的目录：
+As above, directories by conventions of framework:
 
-* **app/router.js** 用于配置 URL 路由规则
-* **app/controller/\*\*** 用于组装service层提供的服务
-* **app/service/**** 用于编写业务逻辑层，可选，建议使用。
-* **app/dao/**** 用于编写和业务交互层，可选，建议使用。
-* **config/{env}.js** 用于编写配置文件，具体参见配置。
-* **config/plugin.js** 用于配置需要加载的插件，具体参见插件。
-* **lib/middleware/**** 用于放置中间件
-* **lib/spec.js** 初始化操作
-* **public** 存储静态文件
-* **test** 存储测试文档
-* **.core/\*\*/*** peajs核心程序，可适当根据业务需求扩展
+* **app/router.js** used to configure URL routing rules.
+* **app/controller/\*\*** used to package the service provided by service level.
+* **app/service/**** used for business logic layer, optional, recommend to use.
+* **app/dao/**** used for middleware, optional, recommend to use.
+* **config/{env}.js** used to write configuration files, see Configuration for details.
+* **config/plugin.js** used to configure the plugins that need to be loaded, see Plugin for details.
+* **lib/middleware/**** used to place middleware.
+* **lib/spec.js** used to initialize works at startup.
+* **public** used to store static resources.
+* **test** used for unit test.
+* **.core/\*\*/*** the core application for peajs, which could be extended according to business requirement.
 
 
-> app/model/** 用于放置领域模型，可选，yo生成项目的时候如何选择数据库可以做初始化工作。
+> app/model/** used to place the domain model, optional. It would be created if a database is chosen when initialize a project by yo.
 

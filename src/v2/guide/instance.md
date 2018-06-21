@@ -1,25 +1,25 @@
 ---
-title: 快速入门
+title: Quick Start
 type: guide
 order: 2
 ---
 
-## 环境准备
-操作系统：支持 macOS，Linux，Windows
-运行环境：建议选择 LTS 版本，最低要求 8.x。
+## Prerequisites
+Operating System: Linux, OS X or Windows.
+Node.js Runtime: 8.x or newer; it is recommended that you use [LTS Releases](https://Nodejs.org).
 
-## 快速初始化
-安装生成器
+## the Quick Way
+安装生成器 Install the generator 
 ```javascript
 [sudo] npm install -g yo pea
 ```
-项目初始化
+Project Initiation
 ```javascript
 yo pea
 ```
-按如图操作然后运行
+Run the code in the screenshot below
  ```javascript 
- npm start就可以启动项目了
+ Start the project by **npm start**
   ```
 
 ![Vue 实例的生命周期](/images/generate-project.jpg)
