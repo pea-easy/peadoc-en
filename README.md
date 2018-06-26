@@ -1,6 +1,9 @@
 # Peajs
-<a href="http://120.78.129.187">Document</a>
 [![npm package](https://badge.fury.io/js/generator-pea.svg)](https://www.npmjs.com/package/generator-pea)
+
+The full documentation is available <a href="http://120.78.129.187">here</a>.
+
+
 
 
 
