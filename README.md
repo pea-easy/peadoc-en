@@ -41,6 +41,41 @@ After completing the above 3 steps, you will see the following information
 
 <img src="/src/images/generate-project.jpg"></img>
 
+# Contributors
+<table>
+    <tr>
+        <td width="20%">
+            <a href="https://github.com/TimLiu1">
+                <img src="https://avatars2.githubusercontent.com/u/16770736?s=460&v=4" />
+                </a>
+                <p align="center">Tim Liu
+                </p>
+                </td>
+                <td width="20%">
+                <a href="https://github.com/InCodingNowLiu"><img src="https://avatars0.githubusercontent.com/u/31758568?s=460&v=4" />
+                </a>
+                <p align="center">Jiqing Liu</p>
+                </td>
+                </td>
+                <td width="20%">
+                <a href="https://github.com/vmeng"><img src="https://avatars1.githubusercontent.com/u/4220520?s=460&v=4" />
+                </a>
+                <p align="center">Viki Meng</p>
+                </td>
+                <td width="20%">
+                <a href="https://github.com/DarrickXue"><img src="https://avatars3.githubusercontent.com/u/37821791?s=460&v=4" />
+                </a>
+                <p align="center">DarrickXue</p>
+                </td>
+                </td>
+                <td width="20%">
+                <a href="https://github.com/riskgod"><img src="https://avatars2.githubusercontent.com/u/3436287?s=460&v=4" />
+                </a>
+                <p align="center">Bruce Chen</p>
+                </td>
+                </tr>
+</table>
+
 
 # License
 
