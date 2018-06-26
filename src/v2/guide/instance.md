@@ -9,7 +9,7 @@ Operating System: Linux, OS X or Windows.
 Node.js Runtime: 8.x or newer; it is recommended that you use [LTS Releases](https://Nodejs.org).
 
 ## the Quick Way
-安装生成器 Install the generator 
+Install Generator 
 ```javascript
 [sudo] npm install -g yo pea
 ```

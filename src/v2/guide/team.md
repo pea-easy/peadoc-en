@@ -1,5 +1,5 @@
 ---
-title: 认识团队
+title: Team
 type: guide
 order: 803
 ---
@@ -243,22 +243,6 @@ order: 803
       ]
     },
     {
-      name: 'Bruce Chen',
-      title: 'Real-Time Rerouter',
-      city: 'Shanghai, China',
-      languages: ['zh', 'en'],
-      github: 'riskgod',
-      work: {
-        role: 'Full Stack Developer',
-      },
-      reposOfficial: [
-        'peajs', 'ruby', 'python', 'react', 'nodejs', 'scala'
-      ],
-      links: [
-        'https://github.com/riskgod'
-      ]
-    },
-    {
       name: 'Darrick Xue',
       title: 'Extrapolator',
       city: 'Shanghai, China',
@@ -266,7 +250,7 @@ order: 803
       work: {
         role: 'Educator & Consultant'
       },
-      github: 'DarrickXue',
+      github: 'DarrickBM',
       links: ['https://www.linkedin.com/in/darrick-xue-68bab4a8'],
       reposOfficial: [
         'Localization'
@@ -287,6 +271,22 @@ order: 803
       links: ['https://github.com/InCodingNowLiu'],
       reposOfficial: [
         'peajs', 'nodejs', 'Objective-C', 'Swift', 'angularjs'
+      ]
+    },
+    {
+      name: 'Bruce Chen',
+      title: 'Real-Time Rerouter',
+      city: 'Shanghai, China',
+      languages: ['zh', 'en'],
+      github: 'riskgod',
+      work: {
+        role: 'Full Stack Developer',
+      },
+      reposOfficial: [
+        'peajs', 'ruby', 'python', 'react', 'nodejs', 'scala'
+      ],
+      links: [
+        'https://github.com/riskgod'
       ]
     }
   ]))

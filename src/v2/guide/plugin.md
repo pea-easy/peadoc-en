@@ -1,50 +1,50 @@
 ---
-title: 插件
+title: Plugin
 type: guide
 order: 7
 ---
 
-## 概述
-插件在peajs里面主要提供两方面的功能
-* 让功能可插拔，用户只需要修改一个flag就可以实现插件的使用与否
-* 插件本身暴露出比较友好的方法，让用户有更多选择
+## Overview
+Plugin in peajs primarily provides 2 feature: 
+* To enable functions swappable, user could merely change a flag to implement the plugin.
+* Plugin itself is a use-friendly way that facilitates development process.
 
-> 插件是基于现在非常流行的包进行二次封装
+> Plugin is re-encapsulated based on the prevailing packages listing below.
 
-## 基本用法
-下面是初始化默认开启的[pea-logger](https://github.com/TimLiu1/pea-logger)插件。
+## Basics
+The [pea-logger](https://github.com/TimLiu1/pea-logger) plugin below is toggled on by default in initialization。
 
 ``` javascript
 // config/development.js
  logger: {
-        name:  'bt',// default: yeoman生成时的项目名称
+        name:  'bt',// default: The project name in yeoman
         level: 'info'
     }
 //config/plugin.js
   logger: {
-        enable:true, //是否启用标识
-        package:'quick-logger' //包名称
+        enable:true, // If to enable the marker
+        package:'quick-logger' // The package name
   }
 
 ```
-## 插件集合
+## Plugin Library
 
 ### pea-logger
-这个插件默认在系统中初始化完成的，完成之后生成一个全局对象logger,可以直接在系统中使用,
-如果想使用自己的包，可以在 **config/plugin**禁止。logger具体使用参见[logger](global-object.html#logger)
+As illustrated above, after the pea-logger is loaded in initialization, a global object logger would be created and it could be used in the system.
+
+If you are willing to use your package, please toggle it down in **config/plugin**. Refer to [logger](global-object.html#logger) for detailed usage.
 
 ### pea-redis
-#### 简介
-pea-redis插件是对 [ioredis](https://github.com/luin/ioredis)的二次封装，支持ioredis的所有方法
-同时新增以下两个特性。
-* 对于常用方法支持async await方法操作redis数据库
-* 支持对象的存取
+#### Introduction
+pea-redis is a re-encapsulation based on the [ioredis](https://github.com/luin/ioredis), which inherits all methods in the ioredis and supports 2 more features:
+* Support async await for common method to operate redis database.
+* Support to read and write object. 
 
-可以单独使用，也可以作为peajs的插件,具体可见[pea-redis](https://github.com/TimLiu1/pea-redis)
+It could be used independently, and as well used as a plugin of peajs. Refer to [pea-redis](https://github.com/TimLiu1/pea-redis) for more details.
 
-#### 作为peajs插件使用
+#### Use pea-redis as a plugin of peajs
 
-因为一些项目并不需要redis作为插件，所以项目初始化过程并没有集成，需要单独作为插件使用
+Concerning some project doesn't integrate redis in the initialization, pea-redis could be independently loaded as a plugin which doesn't require redis.
 ``` javascript
 
 npm i pea-redis
@@ -57,8 +57,8 @@ npm i pea-redis
     },
 //config/plugin.js
   redis: {
-        enable:true, //是否启用标识
-        package:'quick-logger' //包名称
+        enable:true, // If to enable the marker
+        package:'quick-logger' //
   }
 ```
-做完以上配置启动的时候会初始化好所有工作，在APP绑定一个APP.redis对象
+After completing the initialization according to the configuration above, an object of APP.redis will be bound to the app.

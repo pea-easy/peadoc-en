@@ -1,17 +1,17 @@
 ---
-title: 基础工作
+title: Basic Works Automation
 type: guide
 order: 8
 ---
 
-## 概述
-peajs 的目的是让开发者能够忽略基础工作，专注于业务的开发，并没有对koa框架做大的改动，或则语法结构的改动，而是集成许多基础工作和插件，省去开发者的基础烦恼
+## Overview
+The principle of peajs is to forget those duplicated basic works and focus on functional development. We don't revamp framework or language structure of koa, but combined many plugins and basic work components, so that developers don't need to worry about them anymore. 的目的是让开发者能够忽略基础工作，专注于业务的开发，并没有对koa框架做大的改动，或则语法结构的改动，而是集成许多基础工作和插件，省去开发者的基础烦恼
 
 ## eslint
-### 介绍
-在开始做nodejs项目的时候，我们team的所有项目都是没有eslint的，那时候我犯了很多低级错误，比如变量未定义，变量定义未使用，变量定义但是使用的时候单词拼错了，有一部分错误甚至是到线上才发现的，这样不仅仅降低我们的开发效率，而且很容易带来生产事故。
+### Introduction
+Once we kicked off a nodejs project, there was no eslint embedded. At that time, such mistakes were not even found until they were pushed on production environment, like undefined variables, defined variable not in use, typo on defining variables, etc. Therefore, we had to pay double work on fixing it and more importantly it would cause immeasurable lost for these rookie mistakes. 在开始做nodejs项目的时候，我们team的所有项目都是没有eslint的，那时候我犯了很多低级错误，比如变量未定义，变量定义未使用，变量定义但是使用的时候单词拼错了，有一部分错误甚至是到线上才发现的，这样不仅仅降低我们的开发效率，而且很容易带来生产事故。
 
-### 引进可能遇到的问题
+### 引进可能遇到的问题 What i
 我们team在引进eslint的时候遇到了一下几个问题。
 * 历史遗留问题，eslint引进的时候一下10000甚至更多错误冒出来了，由于工作量或则项目进度原因放弃了。
 * 市场上各种各样的eslint规则不知从哪入手。

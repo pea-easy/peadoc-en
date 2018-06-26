@@ -1,27 +1,29 @@
 ---
-title: 业务层
+title: Business Level
 type: guide
 order: 6
 ---
 
-在实际开发过程中，我们需要频繁的使用路由、控制层、服务层、数据库操作层这几个文件, 在Pea.js里面统一把这一层叫做业务层，统一在app文件夹下面。
+A conventional and rational development standard in the team could dramatically save communication and migration cost. Here we are going to introduce the level in peajs.
 
-如果团队中有个约定俗成的合理的开发规则，那整个项目将节省大量沟通成本和交接成本。下面这结构是我们很多项目总结出来比较合理的分层结构。其中**服务认证层**是在我们开发过程中觉得很必要的,这里借鉴linux的设计思想，每个service完成一件事，然后控制层进行组装。如果在服务层之前对传入参数进行简单校验，会避免许多简单错误
+Usually, in the real development we need to frequently use the file under the following level: route service, controlling level, service authentication level and database operation level, which are combined in Pea.js as business level, and stores under app folder. 
 
-## 路由层
-按模块分比如用户模块，订单模块，图表模块
+Notice that Service Authentication Level is particularly added in the peajs, which we found is pretty useful to avoid forgetting to transfer parameter.
 
-## 控制层
+## Route Service
+按模块分比如用户模块，订单模块，图表模块 In Pea.js, route service is divided by module, eg. User Module, Order Module, Graph Module, etc.
+
+## Controlling Level
 服务层提供功能完整性的模块，控制层对功能完整性模块进行组装。
 
-## 服务层
+## Service Level
 服务层主要为控制层服务，完成一个个功能性模块，然后控制层在对服务层进行调用。
 
-### 服务认证层
+### Service Authentication Level
 每个服务function需要一些简单的校验，比如查询用户需要检测用户id是否存在，更新订单需要校验订单id是否存在，主要是为了避免一些常规的错误。
 
 
-## 数据库操作层
+## Database Operation Level
 这一层主要是为了和数据库进行交互
 
 
