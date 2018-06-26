@@ -1,3 +1,4 @@
+#<a href="http://120.78.129.187">Peajs Document</a>
 [![npm package](https://badge.fury.io/js/generator-pea.svg)](https://www.npmjs.com/package/generator-pea)
 
 
@@ -18,13 +19,11 @@ With the development going on, we found a fact that enormous basic work is dupli
 ### 1.Install Generator
 ```
 [sudo] npm install -g yo pea
-
 ```
 
 ### 2.Project Initiation
 ```
 yo pea
-
 ```
 
 ### 3.Run the code in the screenshot below
@@ -32,13 +31,11 @@ yo pea
 Start the project by **npm start**
 ```
 npm start
-
 ```
 
 After completing the above 3 steps, you will see the following information
 
 <img src="/src/images/generate-project.jpg"></img>
-
 
 
 # License
