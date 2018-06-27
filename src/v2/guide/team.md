@@ -113,7 +113,7 @@ order: 803
   <div class="team">
 
     <h2 id="the-core-team">
-      核心团队
+      Team Member
       <button
         v-if="geolocationSupported && !userPosition"
         @click="getUserPosition"
@@ -126,21 +126,21 @@ order: 803
         ></i>
         <template v-else>
           <i class="fa fa-map-marker"></i>
-          <span>谁在我附近</span>
+          <span>Whos's nearyby</span>
         </template>
       </button>
     </h2>
 
     <p v-if="errorGettingLocation" class="tip">
-      无法获取你的位置。
+      Cannot get your location.
     </p>
 
     <p>
-      Peajs 及其生态系统，是在一个国际化的团队的引导下发展壮大的，这里列出部分团队成员的信息。
+      Peajs, along with it's ecosystem is being developed in an international team. Here lists our core team member.
     </p>
 
     <p v-if="userPosition" class="success">
-      核心团队将按照他们与你的距离排序。
+      Now the team members are sorted by location.
     </p>
 
     <vuer-profile
