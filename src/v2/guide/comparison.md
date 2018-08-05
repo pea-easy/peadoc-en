@@ -1,5 +1,5 @@
 ---
-title: 对比其他框架
+title: Comparisons
 type: guide
 order: 801
 ---
