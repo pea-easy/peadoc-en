@@ -3,17 +3,17 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Vue 中文文档(@印记中文) https://docschina.org/
-subtitle: https://vue.docschina.org
-description: "Vue 中文文档,vuefe.cn,vue.docschina.org,印记中文,docschina.org,webpack 中文文档,webpack.docschina.org"
-author: Evan You
+title: Peajs 英文文档(@印记中文) https://www.peajs.top/EN
+subtitle: https://www.peajs.top/EN
+description: "Peajs 英文文档,https://www.peajs.top/EN"
+author: Tim
 email:
-language: zh-CN
+language: EN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://vue.docschina.org
-root: /
+url: https://www.peajs.top/EN
+root: /EN/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
